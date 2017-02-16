@@ -23,4 +23,6 @@
     <?php endif; ?>
 </main>
 
+<?php get_sidebar(); ?> <!-- Appel à la barre latérale -->
+
 <?php get_footer(); ?> <!-- Appel au footer -->

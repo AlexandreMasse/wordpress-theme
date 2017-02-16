@@ -17,7 +17,9 @@
     </header>
 
     <nav>
-        <?php wp_nav_menu(); ?>
+        <?php wp_nav_menu(array(
+            'theme_location' => 'principal'
+        )); ?>
     </nav>
 
     <div id="contenu">
