@@ -1,6 +1,6 @@
 <?php get_header(); ?> <!-- Appel à l’entête -->
 
-<main id="articles">
+<main id="articles" class="unit-70">
     <!-- teste s'il y a des posts-->
     <?php if(have_posts()) : ?>
         <!-- boucle tant qu'il y a des articles -->
@@ -23,6 +23,8 @@
     <?php endif; ?>
 </main>
 
-<?php get_sidebar(); ?> <!-- Appel à la barre latérale -->
+<aside class="unit-30">
+    <?php get_sidebar(); ?> <!-- Appel à la barre latérale -->
+</aside>
 
 <?php get_footer(); ?> <!-- Appel au footer -->

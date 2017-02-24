@@ -4,3 +4,115 @@ Author: Alexandre Massé
 Description: Mon premier thème Wordpress
 Version: 1.0
 */
+
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+
+/* Mise en page des lignes */
+.units-row {
+    max-width: 960px;
+    padding: 0 15px;
+    margin: 0 auto 1.5rem auto;
+}
+
+
+
+/* Styles de l'entête */
+body > header h1 {
+    margin: 1em auto;
+}
+body > header h1 {
+    margin: 1em auto;
+}
+body > header h1 a {
+    text-decoration: none;
+}
+
+
+
+/* Barres des menus */
+.menu {
+    background-color: #fafafa;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+}
+.menu li {
+    display: inline-block;
+}
+.menu a {
+    display: inline-block;
+    color: #333333;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+/* Pied de page */
+nav.piedpage ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.copyright {
+    border-top: 5px solid #fafafa;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+
+
+
+/* Article seul */
+.screen-reader-text {
+    display: none;
+}
+.single article header {
+    border: 3px solid #fafafa;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+.single article header .wp-post-image {
+    margin-bottom: 20px;
+}
+.single article header .auteur {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+}
+article .meta {
+    border-top: 3px solid #fafafa;
+    font-size: 0.75rem;
+    padding-top: 5px;
+}
+article .navigation {
+    background-color: #fafafa;
+    padding: 5px 10px;
+}
+.navigation .nav-previous {
+    float: left;
+    text-align: center;
+    width: 45%;
+}
+.navigation .nav-previous:before {
+    content: "« ";
+}
+.navigation .nav-next {
+    float: right;
+    text-align: center;
+    width: 45%;
+}
+.navigation .nav-next:after {
+    content: " »";
+}
