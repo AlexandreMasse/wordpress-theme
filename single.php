@@ -18,6 +18,11 @@
 
             <div class="meta">
                 <p class="metadata">Publié le : <?php the_date(); ?></p>
+                <div class="categories">Catégorie : <?php the_category();
+                    ?></div>
+                <div class="auteur">Écrit par : <?php the_author_posts_link();
+                    ?></div>
+                <?php edit_post_link(); ?>
             </div>
 
             <!-- Navigation article suivant précédant -->

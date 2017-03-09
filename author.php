@@ -18,15 +18,36 @@
                         </a>
                     </h2>
                 </header>
-                <!-- Le contenu de l’article est affiché avec la fonction the_content().-->
-                <?php the_content(); ?>
+                <!-- extrait de l’article est affiché-->
+                <?php the_excerpt(); ?>
             </article>
-        <?php endwhile; ?>
+        <?php endwhile;
+        the_posts_pagination();
+        ?>
+
     <?php endif; ?>
 </main>
 
 <aside class="unit-30">
-    <?php get_sidebar(); ?> <!-- Appel à la barre latérale -->
+    <h2>A propos de l'auteur</h2>
+    <p class="auteur-nom">
+        <?php echo get_the_author(); ?>
+    </p>
+    <p class="auteur-description">
+        <?php the_author_meta( 'description' ); ?>
+    </p>
+    <p>
+        <span class="libelle">Son courriel</span> :
+        <?php echo the_author_meta('user_email'); ?>.
+    </p>
+    <p>
+        <span class="libelle">Son site web</span> :
+        <?php echo the_author_meta('user_url'); ?>.
+    </p>
+    <p>
+        <?php the_author(); ?> a écrit <?php echo
+        get_the_author_posts(); ?> articles dans ce site.
+    </p>
 </aside>
 
 <?php get_footer(); ?> <!-- Appel au footer -->

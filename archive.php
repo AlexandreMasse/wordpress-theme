@@ -5,6 +5,12 @@
 <main id="articles" class="unit-70">
     <!-- teste s'il y a des posts-->
     <?php if(have_posts()) : ?>
+
+        <!--​ permet d’afficher le titre et la description de la catégorie actuellement affichée-->
+        <div class="titre"><?php the_archive_title(); ?></div>
+        <p><?php the_archive_description(); ?></p>
+        <hr>
+
         <!-- boucle tant qu'il y a des articles -->
         <!-- chaque article lu, la boucle récupère ses informations grâce à la fonction the_post()-->
         <?php while(have_posts()) : the_post(); ?>
@@ -18,10 +24,13 @@
                         </a>
                     </h2>
                 </header>
-                <!-- Le contenu de l’article est affiché avec la fonction the_content().-->
-                <?php the_content(); ?>
+                <!-- extrait de l’article est affiché-->
+                <?php the_excerpt(); ?>
             </article>
-        <?php endwhile; ?>
+        <?php endwhile;
+        the_posts_pagination();
+        ?>
+
     <?php endif; ?>
 </main>
 

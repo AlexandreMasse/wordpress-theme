@@ -18,10 +18,13 @@
                         </a>
                     </h2>
                 </header>
-                <!-- Le contenu de l’article est affiché avec la fonction the_content().-->
-                <?php the_content(); ?>
+                <!-- extrait de l’article est affiché-->
+                <?php the_excerpt(); ?>
             </article>
-        <?php endwhile; ?>
+        <?php endwhile;
+        the_posts_pagination();
+        ?>
+
     <?php endif; ?>
 </main>
 

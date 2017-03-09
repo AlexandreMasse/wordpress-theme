@@ -116,3 +116,11 @@ article .navigation {
 .navigation .nav-next:after {
     content: " »";
 }
+
+
+
+
+/*Pagination*/
+.nav-links .page-numbers {
+    display: inline-block;
+}
