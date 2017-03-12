@@ -3,6 +3,9 @@
 <?php get_header(); ?> <!-- Appel à l’entête -->
 
 <main id="articles" class="unit-70">
+
+    <h1><?php echo get_the_title( get_option( 'page_for_posts' ) ); ?></h1>
+
     <!-- teste s'il y a des posts-->
     <?php if(have_posts()) : ?>
         <!-- boucle tant qu'il y a des articles -->

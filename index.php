@@ -1,5 +1,3 @@
-
-
 <?php get_header(); ?> <!-- Appel à l’entête -->
 
 <main id="articles" class="unit-70">
