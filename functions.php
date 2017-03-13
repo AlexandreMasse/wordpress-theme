@@ -100,13 +100,13 @@ function montheme_personnalisation($wp_customize){
 }
 
 add_action('customize_register', 'montheme_personnalisation');
+
 function montheme_personnaliser_css(){ ?>
     <style type="text/css">
         body > header {
             background-image: url(<?php echo get_theme_mod('charge_image', 'none'); ?>);
             height: <?php echo (get_theme_mod('charge_image')!=='' ? '250px' : 'auto'); ?>
         }
-
 
 
         a {

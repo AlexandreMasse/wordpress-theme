@@ -1,10 +1,9 @@
 /*
-Theme Name: Perso
+Theme Name: DesignCo
 Author: Alexandre Massé
 Description: Mon premier thème Wordpress
 Version: 1.0
 */
-
 
 .clearfix:after {
     clear: both;
@@ -16,7 +15,7 @@ Version: 1.0
 
 /* Mise en page des lignes */
 .units-row {
-    max-width: 960px;
+    max-width: 1100px;
     padding: 0 15px;
     margin: 0 auto 1.5rem auto;
 }
@@ -118,9 +117,25 @@ article .navigation {
 }
 
 
-
-
 /*Pagination*/
 .nav-links .page-numbers {
     display: inline-block;
+}
+
+
+
+p {
+    margin: 0;
+}
+
+article {
+    margin: 50px 0;
+}
+
+img {
+    margin: 20px 0;
+}
+
+li{
+    list-style: none;
 }

@@ -4,20 +4,21 @@
 
     <?php while(have_posts()) : the_post(); ?>
 
-        <article id="article-seul" class="unit-70 centered">
+        <article id="article-seul article-<?php the_ID()?>" class="unit-80 centered">
 
             <header>
                 <h2><?php the_title(); ?></h2>
                 <?php if(has_post_thumbnail()) : ?>
-                    <?php the_post_thumbnail('thumb'); ?>
+                    <?php the_post_thumbnail('medium'); ?>
                 <?php endif; ?>
-                <p class="auteur">Par : <?php the_author(); ?></p>
+                <p class="auteur">Publié par : <?php the_author(); ?></p>
+                <p class="metadata">Publié le : <?php echo ucfirst(get_the_date('l, j F Y')) ?></p>
             </header>
 
             <?php the_content(); ?>
 
             <div class="meta">
-                <p class="metadata">Publié le : <?php the_date(); ?></p>
+
                 <div class="categories">Catégorie : <?php the_category();
                     ?></div>
                 <div class="auteur">Écrit par : <?php the_author_posts_link();
